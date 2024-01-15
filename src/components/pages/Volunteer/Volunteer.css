@@ -1,0 +1,116 @@
+.vcard-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+   
+  }
+  
+  .vcard {
+    border: 2px solid #9f9797;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: calc(33.33% - 20px); 
+    background-color: rgb(77, 73, 73);
+  }
+  
+  .info-vlabel {
+    font-weight: bold;
+    color: #688293; 
+    margin-right: 8px; 
+  }
+  
+
+  .vcard:hover {
+    transform: scale(1.01);
+  }
+  
+  .vcard img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .vcard-body {
+    padding: 15px;
+  }
+  
+  .vcard-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    color: #e0e0e0;
+  }
+  
+  .vcard-text {
+    margin: 10px 0;
+    color: #e0e0e0;
+  }
+  
+  .vcbtn {
+    display: inline-block;
+    padding: 8px 16px;
+    background: transparent;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+  
+  .vcbtn:hover {
+    background: #333;
+  }
+ 
+ .vpage-topic {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin: 20px 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  border-radius: 10px;
+
+}
+
+.vpage-topic p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #333;
+    }
+  }
+  
+  .vcard-container {
+    display: flex;
+   
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .vcard {
+      flex: 0 0 calc(100% - 20px); 
+    }
+  }
+  

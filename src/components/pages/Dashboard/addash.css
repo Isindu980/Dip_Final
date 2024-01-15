@@ -1,0 +1,17 @@
+
+
+.container {
+    display: grid;
+    flex-direction: row;
+    align-items: grid;
+  }
+  
+ 
+  
+  .events {
+    flex-grow: 1;
+    align-self: grid;
+  }
+  
+
+  

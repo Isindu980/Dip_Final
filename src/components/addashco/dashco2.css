@@ -1,0 +1,35 @@
+
+
+.orgcount-cont {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    text-align: center;
+    max-width: 400px; 
+    margin: 0 auto;
+    grid-template-columns: max-content;
+  }
+  
+  .orgcount-cont h2 {
+    color: #333;
+    font-size: 1.5rem;
+  }
+  
+  .orgcount-cont p {
+    color: #666;
+    margin: 8px 0;
+  }
+  
+
+  @media only screen and (max-width: 600px) {
+    .orgcount-cont {
+      padding: 12px;
+    }
+  
+    .orgcount-cont h2 {
+      font-size: 1.2rem;
+    }
+  }
+  

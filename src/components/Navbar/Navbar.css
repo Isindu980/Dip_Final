@@ -1,0 +1,119 @@
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 14px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  .desktop-logo {
+    display: block; 
+    
+    font-size: 20px; 
+    font-weight: 500;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+    position: relative;
+    font-family:'Times New Roman', Times, serif;
+  
+    
+  }
+  
+  .desktop-logo:hover {
+    color: #17cf97;
+  }
+  
+  .desktop-logo::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background: #17cf97;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .desktop-logo:hover::after {
+    width: 100%;
+  }
+  #navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #navbar li {
+    list-style: none;
+    margin: 0 15px;
+    position: relative;
+    margin-left:20px ;
+  }
+  
+  #navbar li a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+    position: relative;
+  }
+
+  
+  #navbar li a:hover,
+  #navbar li a:active {
+    color: #17cf97;
+  }
+  
+  #navbar li a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background: #17cf97;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  #navbar li a:hover::after,
+  #navbar li a:active::after {
+    width: 100%;
+  }
+
+  .menu-icon {
+    display: none;
+    margin-left: 20px;
+}
+  
+
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 20px;
+    }
+  
+    #navbar {
+      display: none; 
+      flex-direction: column;
+    }
+  
+    #navbar.navbar-open {
+      display: flex; 
+    }
+  
+    #navbar li {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+  
+    .menu-icon {
+      display: block;
+      cursor: pointer;
+      color: #fff;
+      margin-right: 15px;
+    }
+  }
+  

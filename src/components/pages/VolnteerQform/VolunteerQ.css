@@ -1,0 +1,328 @@
+
+
+.form {
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #FFF;
+ 
+  }
+  
+  
+  .form-container {
+    margin-top: 60px; 
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .interviewq {
+    margin-left: 20px;
+    transform: scale(1.1);
+    animation: pulse 1s infinite alternate;
+  }
+  
+  @keyframes pulse {
+    from {
+      transform: scale(1.1);
+    }
+    to {
+      transform: scale(1.2);
+    }
+  }
+  
+  .btn-one {
+    background-color: transparent;
+    color: #ffffff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .btn-one:hover {
+    background-color: #333;
+    transform: scale(1.05);
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 16px;
+    animation: fadeIn 1s both;
+    text-decoration: aliceblue;
+    text-align: left;
+  }
+  
+  input[type="radio"] {
+    margin-right: 10px;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #4b4949;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    transform: translateY(2px);
+  }
+  
+  input[type="radio"]:checked {
+    background-color: #eee7e7;
+  }
+  
+  label span {
+    font-weight: bold;
+    color: #666161;
+  }
+  
+  .error-message {
+    color: #ff0000;
+  }
+  
+  .form h2 {
+    font-size: 36px;
+    color: #000000;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 20px;
+    animation: fadeInUp 1s both;
+    font-weight: bold;
+  }
+  
+  .para-one {
+    font-size: 17px;
+   
+    margin-bottom: 30px;
+    margin-left: 200px;
+    text-align: center;
+    line-height: 1.5;
+    font-weight: bold;
+    text-align: justify;
+  }
+  
+  .input-text {
+    width: 100%;
+    height: 45px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.8);
+    background: transparent;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+  }
+  
+  .input-select {
+    width: 100%;
+    height: 45px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.8);
+    background: transparent;
+  }
+  
+  .input label input[type="checkbox"] {
+    margin-right: 10px;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #4b4949;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    transform: translateY(2px);
+  }
+  
+  .input label input[type="checkbox"]:checked {
+    background-color: #000000;
+  }
+  
+  .input-select-container {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+    color: transparent;
+  }
+  
+  .input-select {
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.8);
+    background: transparent;
+    cursor: pointer;
+    appearance: none;
+  }
+  
+  .input-select:after {
+    content: '\f107';
+    font-size: 16px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: transparent;
+  }
+  
+  .input-select option {
+    background: transparent;
+    color: #000;
+  }
+  
+  .input-select:focus {
+    border-color: #17cf97;
+    border-width: 2px;
+    border-style: solid;
+  }
+  
+  .register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .registration {
+    border: 2px solid rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    box-shadow: 5px 10px 10px 1px rgba(32, 33, 36, 0.28);
+    align-items: center;
+    text-align: center;
+  }
+  
+  .account h2 {
+    font-size: 35px;
+    margin-bottom: 40px;
+  }
+  
+  .input-text::placeholder {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .page-topic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #007BFF; 
+    color: #fff;
+  }
+  
+  .page-topic h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+
+  @media (max-width: 768px) {
+    .form {
+      max-width: 100%;
+      margin: 0;
+      padding: 10px;
+    }
+  
+    .form h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+  
+    .input-text {
+      height: 35px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #eee;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    transition: border-color 0.3s;
+    text-align: left;
+    outline: none;
+    color: #000;
+    font-weight: normal;
+    border: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.8);
+  }
+  
+    .input-select {
+      height: 35px;
+      margin-bottom: 10px;
+      font-size: 15px;
+      font-weight: bold;
+      background-color: #eee;
+      color: #333;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 5px;
+      transition: border-color 0.3s;
+      text-align: left;
+      outline: none;
+      color: #000;
+      font-weight: normal;
+      border: none;
+      border-bottom: 2px solid rgba(0, 0, 0, 0.8);
+    }
+  
+    .input-select-container {
+      position: relative;
+      width: 100%;
+      margin-bottom: 10px;
+      color: transparent;
+    }
+    
+    .input-select::after {
+      font-size: 15px;
+      right: 10px;
+    }
+  
+    .input-select option {
+      font-size: 14px;
+      padding: 8px;
+    }
+  
+    .input label input[type="checkbox"] {
+      right: 10px;
+      appearance: none;
+      width: 20px;
+      height: 20px;
+      border: 2px solid #4b4949;
+      border-radius: 5px;
+      outline: none;
+      cursor: pointer;
+      position: relative;
+      transform: translateY(2px);
+    }
+  
+    .input label input[type="checkbox"]:checked {
+      background-color: #9d9696;
+    }
+    
+    .page-topic h1 {
+      font-size: 20px;
+    }
+  }
+  

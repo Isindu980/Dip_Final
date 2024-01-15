@@ -1,0 +1,25 @@
+/* Logout.css */
+
+.logout-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .logout-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #e74c3c; /* Red color, you can change this */
+    color: #fff; /* White text, you can change this */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  
+    /* Optional: Add hover effect */
+    &:hover {
+      background-color: #c0392b; /* Darker red color on hover, you can change this */
+    }
+  }
+  

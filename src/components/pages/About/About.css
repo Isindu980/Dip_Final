@@ -1,0 +1,165 @@
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  max-width: 800px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  animation: fadeIn 1s;
+  transition: transform 0.3s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.about-content:hover {
+  transform: scale(1.05);
+}
+
+.about-image {
+  flex: 1;
+  max-width: 50%;
+  padding: 20px;
+  animation: slideInLeft 1s;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.about-image img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.about-details {
+  flex: 1;
+  padding: 20px;
+  animation: slideInRight 1s;
+}
+
+/*@keyframes slideInRight {
+  from {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}*/
+
+.about-title {
+  font-size: 2.5rem;
+  color: #160303;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+}
+
+.about-description {
+  font-size: 1.2rem;
+  color: #110101;
+  line-height: 1.6;
+}
+
+
+
+
+
+
+
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  max-width: 800px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.about-image {
+  flex: 1;
+  max-width: 50%;
+  padding: 20px;
+}
+
+.about-image img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.about-image img:hover {
+  transform: scale(1.05);
+}
+
+.about-details {
+  flex: 1;
+  padding: 20px;
+}
+
+.about-title {
+  font-size: 1.8rem;
+  color: #333;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+}
+
+.about-description {
+  font-size: .8rem;
+  color:black;
+  line-height: 1.6;
+  text-align: justify;
+  font-weight: bold;
+}
+.background-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}

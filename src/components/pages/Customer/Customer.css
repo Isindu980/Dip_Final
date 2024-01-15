@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.customer-cuscontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 100vh;
+}
+
+.cuscard {
+  height: 280px;
+  max-width: 350px;
+  background:transparent;
+  transition: 0.4s;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px; 
+  border-radius: 20px;
+  backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+}
+
+.cuscard:hover {
+  height: 470px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.cuscard .simg {
+  height: 200px;
+  width: 100%;
+}
+
+.cuscard .simg img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.cuscard .custop-text {
+  padding: 5px;
+  color: #ffff;
+}
+
+.cuscard .custop-text .cusname {
+  font-size: 25px;
+  font-weight: 600;
+  color: #ffff;
+  
+}
+
+.cuscard .custop-text p {
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffff;
+  line-height: 20px;
+}
+
+.cuscard .cusbottom-text {
+  padding: 0 20px 10px 20px;
+  background: transparent;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.1s;
+}
+
+.cuscard:hover .cusbottom-text {
+  opacity: 1;
+  visibility: visible;
+  color: #ffff;
+}
+
+.cuscard .cusbottom-text .text {
+  text-align: justify;
+}
+
+.cuscard .cusbottom-text .cusbtn {
+  margin: 10px 0;
+  text-align: left;
+}
+
+.cuscard .cusbottom-text .cusbtn a {
+  text-decoration: none;
+  background-color:white;
+  color: #000000;
+  font-weight: 100;
+  padding: 5px 8px;
+  border-radius: 6px;
+  display: inline-flex;
+  transition: 0.2s;
+}
+
+.cuscard .cusbottom-text .cusbtn a:hover {
+  transform: scale(0.9);
+  background-color:#000000 ;
+  color: white;
+}
+
+@media screen and (max-width: 978px) {
+  .cuscontainer {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .cuscard {
+    max-width: 700px;
+    margin: 20px 0;
+  }
+}

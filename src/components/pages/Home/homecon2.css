@@ -1,0 +1,17 @@
+.nav-section1 .content1 button {
+  background: #fff;
+  padding: 12px 30px;
+  border: none;
+  font-size: 1rem;
+  border-radius: 6px;
+  margin-top: 38px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s ease;
+
+}
+
+.nav-section1 .content1 button:hover {
+  color: #fff;
+  background: #333;
+}
